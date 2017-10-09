@@ -29,3 +29,5 @@ C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.API\bin\S
 C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.API\obj\Debug\ExpenseTracker.API.csprojResolveAssemblyReference.cache
 C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.API\obj\Debug\ExpenseTracker.API.dll
 C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.API\obj\Debug\ExpenseTracker.API.pdb
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.API\bin\Marvin.JsonPatch.dll
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.API\bin\System.Linq.Dynamic.dll
