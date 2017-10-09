@@ -33,16 +33,35 @@ namespace ExpenseTracker.API.Controllers
 
 
 
-        public IHttpActionResult Get(string sort = "id")
+        public IHttpActionResult Get(string sort = "id", string status = null, string userId = null)
         {
             try
             {
+                int statusId = -1;
+                if (status != null)
+                {
+                    switch (status.ToLower())
+                    {
+                        case "open": statusId = 1;
+                            break;
+                        case "confirmed": statusId = 2;
+                            break;
+                        case "processed": statusId = 3;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+
                 // get expensegroups from repository
                 var expenseGroups = _repository.GetExpenseGroups();
 
                 // return them after mapping them to DTO's, with statuscode 200
                  return Ok(expenseGroups 
                     .ApplySort(sort)
+                    .Where(eg => (statusId == -1 || eg.ExpenseGroupStatusId == statusId))
+                    .Where(eg => (userId == null || eg.UserId == userId))
                     .ToList()
                     .Select(eg => _expenseGroupFactory.CreateExpenseGroup(eg)));
                  
