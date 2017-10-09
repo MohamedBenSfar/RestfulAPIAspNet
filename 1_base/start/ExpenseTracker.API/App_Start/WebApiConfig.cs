@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Web.Http;
 
 namespace ExpenseTracker.API
@@ -17,20 +18,31 @@ namespace ExpenseTracker.API
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            config.Routes.MapHttpRoute(name: "DefaultRouting",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional });
+            config.Routes.MapHttpRoute(
+               name: "DefaultRouting",
+               routeTemplate: "api/{controller}/{id}",
+               defaults: new { id = RouteParameter.Optional }
+           );
+ 
 
+            // clear the supported mediatypes of the xml formatter
             config.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
 
-config.Formatters.JsonFormatter.SupportedMediaTypes.Add(
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(
                 new MediaTypeHeaderValue("application/json-patch+json"));
 
-            config.Formatters.JsonFormatter.SerializerSettings.Formatting
-                = Newtonsoft.Json.Formatting.Indented;
+            
+            // ... or ensure the json formatter accepts text/html
 
-            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver
-                = new CamelCasePropertyNamesContractResolver();
+            //config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+
+            // results should come out
+            // - with indentation for readability
+            // - in camelCase
+
+            var json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
+            json.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
             return config;
              
