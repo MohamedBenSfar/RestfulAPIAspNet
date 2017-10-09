@@ -1,0 +1,5 @@
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.Constants\bin\Debug\ExpenseTracker.Constants.dll
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.Constants\bin\Debug\ExpenseTracker.Constants.pdb
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.Constants\obj\Debug\ExpenseTracker.Constants.csprojResolveAssemblyReference.cache
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.Constants\obj\Debug\ExpenseTracker.Constants.dll
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.Constants\obj\Debug\ExpenseTracker.Constants.pdb

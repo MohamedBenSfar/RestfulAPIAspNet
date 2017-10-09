@@ -1,0 +1,5 @@
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.DTO\bin\Debug\ExpenseTracker.DTO.dll
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.DTO\bin\Debug\ExpenseTracker.DTO.pdb
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.DTO\obj\Debug\ExpenseTracker.DTO.csprojResolveAssemblyReference.cache
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.DTO\obj\Debug\ExpenseTracker.DTO.dll
+C:\Users\Med\Source\Repos\RestfulAPIAspNet\1_base\start\ExpenseTracker.DTO\obj\Debug\ExpenseTracker.DTO.pdb
